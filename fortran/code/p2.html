@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortran Code Snippet</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyCode()">Copy</button>
+    <code id="fortran-code">
+PROGRAM SAMPLE2
+REAL FXX
+INTEGER X
+DATA X /4/
+FXX = (X * X) + (5 * X) + (6 / 11)
+WRITE(*, *) 'F(', X, ') =', FXX
+STOP
+END
+    </code>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

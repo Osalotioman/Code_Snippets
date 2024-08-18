@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortran Code Snippet</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyCode()">Copy</button>
+    <code id="pascal-code">
+PROGRAM Average(input, output);
+(* This program computes the average of 6 input numbers *)
+
+VAR
+    x, sum, av: real;
+    n: integer;
+
+BEGIN
+    n:=0; sum := 0;
+    read(x);
+    WHILE NOT eof DO
+      BEGIN
+          n := n + 1;
+          sum := sum + x;
+          read(x);
+      END;
+    av := sum/n;
+    writeln(n:5,' numbers were given.');
+    writeln(av:5:1,' is their average.');
+END.
+    </code>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

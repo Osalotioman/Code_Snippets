@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortran Code Snippet</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="code-container">
+    <button class="copy-button" onclick="copyCode()">Copy</button>
+    <code id="pascal-code">
+PROGRAM circle(input, output);
+(* program calculates the area of a circle *)
+
+VAR
+    Area, radius: real;
+
+BEGIN
+    Read(radius);
+    Area := 3.14159 * sqr(radius);
+    Write(radius, area);
+END.
+
+    </code>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

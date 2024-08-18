@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+.code-container {
+    position: relative;
+    background-color: #272822;
+    padding: 20px;
+    border-radius: 8px;
+    color: #f8f8f2;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre;
+    overflow-x: auto;
+}
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #50fa7b;
+    border: none;
+    color: #272822;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.copy-button:active {
+    background-color: #40d970;
+}

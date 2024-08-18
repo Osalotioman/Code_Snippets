@@ -1,0 +1,8 @@
+PROGRAM SAMPLE2
+REAL FXX
+INTEGER X
+DATA X /4/
+FXX = (X * X) + (5 * X) + (6 / 11)
+WRITE(*, *) 'F(', X, ') =', FXX
+STOP
+END
